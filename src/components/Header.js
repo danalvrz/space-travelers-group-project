@@ -1,14 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="menuContainer">
-      <h1>Space Traveling</h1>
+      <h1 className="font-bold">Space Traveling</h1>
       <nav className="menuList">
-        <Link to="/">MyProfile</Link>
-        <Link to="/missions">Missions</Link>
-        <Link to="/rockets">Rockets</Link>
+        <NavLink
+          to="/rockets"
+          className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-black font-thin')}
+        >
+          Rockets
+
+        </NavLink>
+        <NavLink
+          to="/missions"
+          className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-black font-thin')}
+        >
+          Missions
+
+        </NavLink>
+        <NavLink
+          to="/myProfile"
+          className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-black font-thin')}
+        >
+          MyProfile
+
+        </NavLink>
       </nav>
     </header>
   );

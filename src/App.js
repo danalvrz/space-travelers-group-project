@@ -8,18 +8,14 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <section className="App-body">
-        <Router>
-        <Header/>
-          <Routes>
-            <Route exact path="/" element={<MyProfile />} />
-            <Route path="/missions" element={<Missions />} />
-            <Route path="/rockets" element={<Rockets />} />
-          </Routes>
-        </Router>
-      </section>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route exact path="/myProfile" element={<MyProfile />} />
+      </Routes>
+    </Router>
   );
 }
 
