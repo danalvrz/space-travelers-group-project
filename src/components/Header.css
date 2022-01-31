@@ -1,0 +1,6 @@
+a.selected {
+    text-decoration: none;
+}
+a.selected:active {
+    text-decoration: underline;
+}

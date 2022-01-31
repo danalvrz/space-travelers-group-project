@@ -7,8 +7,8 @@ function Header() {
       <h1>Space Traveling</h1>
       <nav className="menuList">
         <Link to="/">MyProfile</Link>
-        <Link to="/missions">Missions</Link>
-        <Link to="/rockets">Rockets</Link>
+        <NavLink to="/missions">Missions</NavLink>
+        <NavLink to="/rockets" activeClassName="selected">Rockets</NavLink>
       </nav>
     </header>
   );
