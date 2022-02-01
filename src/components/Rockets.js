@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Rockets() {
+const Rockets = () => {
   return (
     <div>
       <h1>Rockets</h1>
