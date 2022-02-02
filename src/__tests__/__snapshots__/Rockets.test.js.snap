@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets section renders Rockets correctly 1`] = `
+<div>
+  <h1>
+    Rockets
+  </h1>
+</div>
+`;

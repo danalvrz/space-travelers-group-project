@@ -5,16 +5,16 @@ function MyProfile() {
   const missions = useSelector((state) => state.missions);
   const myMissionsArr = [];
 
-  const MyMissions = () => {
-    missions.forEach((mission) => {
-      if (mission.member) {
+  const MyMissions = (myMissionsData) => {
+    if (myMissionsData.missions !== undefined) {
+      myMissionsData.missions.filter((mission) => mission.member === true).forEach((mission) => {
         myMissionsArr.push(
           <tr key={mission.mission_id} className="border h-14">
             <td className="pl-5">{mission.mission_name}</td>
           </tr>,
         );
-      }
-    });
+      });
+    }
     return myMissionsArr;
   };
 
@@ -24,7 +24,7 @@ function MyProfile() {
         <h2 className="font-bold text-3xl pb-3">My Missions</h2>
         <table className="border w-11/12">
           <tbody>
-            <MyMissions />
+            <MyMissions missions={missions} />
           </tbody>
         </table>
       </div>

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile section renders MyProfile correctly 1`] = `
+<div
+  className="flex mx-20"
+>
+  <div
+    className="missions container"
+  >
+    <h2
+      className="font-bold text-3xl pb-3"
+    >
+      My Missions
+    </h2>
+    <table
+      className="border w-11/12"
+    >
+      <tbody />
+    </table>
+  </div>
+  <div
+    className="rockets container"
+  >
+    <h2
+      className="font-bold text-3xl pb-3"
+    >
+      My Rockets
+    </h2>
+    <table
+      className="border w-11/12"
+    >
+      <tbody>
+        <tr
+          className="border h-14"
+        >
+          <td
+            className="pl-5"
+          >
+            TEST
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
