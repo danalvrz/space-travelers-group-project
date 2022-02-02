@@ -25,9 +25,10 @@ h2 {
 button {
     text-align: left;
     padding: 0.5rem;
-    color: #fff;
-    width: 140px;
+    color: #ffffff;
+    width: 160px;
     margin: 10px 0;
+    border: solid 1px;
 }
 
 button:active {
@@ -36,8 +37,12 @@ button:active {
     color: gray;
 }
 
-.reservation {
+.reserve {
     display: none;
+}
+
+.reserved {
+    display: inline-block;
     background-color: #09a7b9;
     color: #fff;
     padding: 0.2rem;
