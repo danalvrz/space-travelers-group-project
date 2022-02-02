@@ -13,7 +13,6 @@ const Rockets = () => {
 
   return (
     <div>
-      <h1>Rockets</h1>
       {rockets.map((rocket) => (
         <Rocket key={rocket.id} rocket={rocket} />
       ))}
