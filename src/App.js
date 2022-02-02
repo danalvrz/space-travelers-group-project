@@ -30,7 +30,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/" element={<Rockets />} />
         <Route path="/missions" element={<Missions />} />
         <Route exact path="/myProfile" element={<MyProfile />} />
       </Routes>

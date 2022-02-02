@@ -11,7 +11,7 @@ function Header() {
       </div>
       <nav className="menuList mt-5 container ml-20 pl-20">
         <NavLink
-          to="/rockets"
+          to="/"
           className={({ isActive }) => (isActive ? 'text-blue-500 font-bold underline mx-5' : 'text-black font-thin mx-5')}
         >
           Rockets
