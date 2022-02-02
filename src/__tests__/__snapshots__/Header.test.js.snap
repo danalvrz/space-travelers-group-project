@@ -24,8 +24,9 @@ exports[`Header section renders Header correctly 1`] = `
     className="menuList mt-5 container ml-20 pl-20"
   >
     <a
-      className="text-black font-thin mx-5"
-      href="#/rockets"
+      aria-current="page"
+      className="text-blue-500 font-bold underline mx-5"
+      href="#/"
       onClick={[Function]}
     >
       Rockets
