@@ -1,12 +1,23 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MyProfile from './components/MyProfile';
 import Missions from './components/Missions';
 import Rockets from './components/Rockets';
 import Header from './components/Header';
+import store from './redux/configureStore';
+
+const missionBaseUrl = 'https://api.spacexdata.com/v3/missions';
 
 function App() {
+  useEffect(() => {
+    const fetchMissionsData = () => {
+      fetch(missionBaseUrl, { method: 'GET' })
+        .then((response) => response.json()
+          .then((data) => store.dispatch({ type: 'FETCH_MISSIONS', payload: data })));
+    };
+    fetchMissionsData();
+  }, []);
   return (
     <Router>
       <Header />
