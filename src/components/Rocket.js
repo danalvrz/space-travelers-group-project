@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket } from '../redux/rockets/rockets';
 import './Rocket.css';
-import store from '../redux/configureStore';
 
 const Rocket = ({ rocket }) => {
+  const dispatch = useDispatch();
   const rocketReservation = () => {
-    store.dispatch(reserveRocket(rocket));
+    dispatch(reserveRocket(rocket));
   };
 
   return (
@@ -22,6 +23,16 @@ const Rocket = ({ rocket }) => {
       </div>
     </div>
   );
+};
+
+Rocket.propTypes = {
+  rocket: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    rocket_name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    flickr_images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    reserve: PropTypes.bool,
+  }).isRequired,
 };
 
 export default Rocket;

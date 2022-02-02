@@ -5,9 +5,9 @@ const RESERVE_ROCKETS = 'RESERVE_ROCKETS';
 
 const initialState = [];
 
-export const reserveRocket = (rocket) => ({ 
-    type: RESERVE_ROCKETS,
-    id: rocket.id,
+export const reserveRocket = (rocket) => ({
+  type: RESERVE_ROCKETS,
+  id: rocket.id,
 });
 
 const getRockets = (payload) => ({
@@ -24,15 +24,15 @@ const reducer = (state = initialState, action) => {
     case FETCH_ROCKETS:
       return action.payload;
     case RESERVE_ROCKETS:
-        return state.map((rocket) => {
-            if (rocket.id !== action.id) {
-                return rocket;
-            }
-            return { 
-                ...rocket, 
-                reserve: !rocket.reserve, 
-            };
-        });
+      return state.map((rocket) => {
+        if (rocket.id !== action.id) {
+          return rocket;
+        }
+        return {
+          ...rocket,
+          reserve: !rocket.reserve,
+        };
+      });
     default:
       return state;
   }
