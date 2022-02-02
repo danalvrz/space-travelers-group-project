@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import MyRockets from './MyRockets';
 
 function MyProfile() {
   const missions = useSelector((state) => state.missions);
@@ -30,14 +31,7 @@ function MyProfile() {
       </div>
       <div className="rockets container">
         <h2 className="font-bold text-3xl pb-3">My Rockets</h2>
-        <table className="border w-11/12">
-          <tbody>
-            {/* the next <tr> element should be replaced with the correct rockets component */}
-            <tr className="border h-14">
-              <td className="pl-5">TEST</td>
-            </tr>
-          </tbody>
-        </table>
+        <MyRockets />
       </div>
     </div>
   );
