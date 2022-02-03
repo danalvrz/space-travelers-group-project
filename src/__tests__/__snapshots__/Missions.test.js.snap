@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions section renders Missions correctly 1`] = `
+<div
+  className="container ml-20 border mb-14"
+>
+  <table
+    className="divide-y divide-gray-200"
+  >
+    <thead
+      className="bg-gray-50 divide-x"
+    >
+      <tr
+        className="divide-x"
+      >
+        <th
+          className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider"
+          scope="col"
+        >
+          Mission
+        </th>
+        <th
+          className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider"
+          scope="col"
+        >
+          Description
+        </th>
+        <th
+          className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider"
+          scope="col"
+        >
+          Status
+        </th>
+        <th
+          className="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider"
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody
+      className="bg-white divide-y divide-gray-200"
+    />
+  </table>
+</div>
+`;
