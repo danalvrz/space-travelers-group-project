@@ -11,8 +11,9 @@ const Rockets = () => {
           <Rocket key={rocket.id} rocket={rocket} />
         ))}
       </div>
-    );}
+    );
+  }
   return [];
-  };
+};
 
 export default Rockets;

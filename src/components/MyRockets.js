@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux';
 
 const MyRockets = () => {
   const rockets = useSelector((state) => state.rockets);
-  const rocketsReserved = null;
+  let rocketsReserved = null;
 
   if (rockets !== undefined) {
     rocketsReserved = rockets.filter((rocket) => rocket.reserve === true);
-    
+
     return (
       <table className="border w-11/12">
         <tbody>
@@ -19,9 +19,8 @@ const MyRockets = () => {
         </tbody>
       </table>
     );
-  };
-  return [];
   }
-
+  return [];
+};
 
 export default MyRockets;
