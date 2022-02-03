@@ -14,7 +14,7 @@ const mockReducer = () => combineReducers({
 });
 const store = createStore(mockReducer);
 
-describe('Missions sectiion', () => {
+describe('Missions section', () => {
   it('renders Missions correctly', () => {
     const tree = renderer.create(
       <Provider store={store}>

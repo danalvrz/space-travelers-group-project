@@ -1,15 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import { Provider, useDispatch } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import Rockets from '../components/Rockets';
 
 const mockStore = [];
-const mockMissionsReducer = () => [{
-  mission_id: 0, mission_name: 'test', mission_description: 'test', member: true,
-}];
-const mockRocketsReducer = () => mockStore;
+const mockMissionsReducer = () => mockStore;
+const mockRocketsReducer = () => [{ id: 0, rocket_name: 'test', description: 'test', reserve: true }];
 const mockReducer = () => combineReducers({
   mockMissionsReducer,
   mockRocketsReducer,

@@ -3,19 +3,25 @@ import { useSelector } from 'react-redux';
 
 const MyRockets = () => {
   const rockets = useSelector((state) => state.rockets);
-  const rocketsReserved = rockets.filter((rocket) => rocket.reserve === true);
+  const rocketsReserved = null;
 
-  return (
-    <table className="border w-11/12">
-      <tbody>
-        {rocketsReserved.map((rocket) => (
-          <tr key={rocket.id} className="border h-14">
-            <td className="pl-5">{rocket.rocket_name}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
+  if (rockets !== undefined) {
+    rocketsReserved = rockets.filter((rocket) => rocket.reserve === true);
+    
+    return (
+      <table className="border w-11/12">
+        <tbody>
+          {rocketsReserved.map((rocket) => (
+            <tr key={rocket.id} className="border h-14">
+              <td className="pl-5">{rocket.rocket_name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
+  return [];
+  }
+
 
 export default MyRockets;

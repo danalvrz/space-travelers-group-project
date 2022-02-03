@@ -26,21 +26,6 @@ exports[`MyProfile section renders MyProfile correctly 1`] = `
     >
       My Rockets
     </h2>
-    <table
-      className="border w-11/12"
-    >
-      <tbody>
-        <tr
-          className="border h-14"
-        >
-          <td
-            className="pl-5"
-          >
-            TEST
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
 `;

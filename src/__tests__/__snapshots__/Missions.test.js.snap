@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Missions sectiion renders Missions correctly 1`] = `
+exports[`Missions section renders Missions correctly 1`] = `
 <div
   className="container ml-20 border mb-14"
 >
