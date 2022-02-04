@@ -2,7 +2,7 @@
   "name": "space-travelers-group-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://danalvrz.github.io/space-travelers-group-project",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
