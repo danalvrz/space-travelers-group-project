@@ -24,7 +24,7 @@ Space Travelers‘ Hub makes [API requests to SpaceX data](https://api.spacexdat
 
 ## Live Demo
 
-[Live Demo Link](http://danalvrz.github.io/space-travelers-group-project/)
+[Live Demo Link](https://danalvrz.github.io/space-travelers-group-project/index)
 
 ## Getting Started
 
