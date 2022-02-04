@@ -2,7 +2,7 @@
 
 exports[`Missions section renders Missions correctly 1`] = `
 <div
-  className="container ml-20 border mb-14"
+  className="container mx-auto border mb-14"
 >
   <table
     className="divide-y divide-gray-200"

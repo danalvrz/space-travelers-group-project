@@ -2,7 +2,7 @@
 
 exports[`Header section renders Header correctly 1`] = `
 <header
-  className="menuContainer flex justify-evenly container mt-5 mb-5 pb-6 border-b ml-20"
+  className="menuContainer flex justify-evenly container mt-5 mb-5 pb-6 border-b mx-auto"
 >
   <div
     className="flex container mr-20"
