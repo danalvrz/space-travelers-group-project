@@ -19,7 +19,7 @@ const Rocket = ({ rocket }) => {
           <span className={`${rocket.reserve ? 'reserved' : 'reserve'}`}> Reserved </span>
           {rocket.description}
         </p>
-        <button type="submit" className={`${rocket.reserve ? 'border-neutral-500 text-neutral-500' : 'bg-sky-400'} rounded-full`} onClick={rocketReservation}>{rocket.reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
+        <button type="submit" className={` text-center ${rocket.reserve ? 'border-neutral-500 text-neutral-500' : 'bg-sky-400'} rounded-full`} onClick={rocketReservation}>{rocket.reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
       </div>
     </div>
   );
